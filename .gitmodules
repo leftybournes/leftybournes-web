@@ -1,0 +1,3 @@
+[submodule "themes/kylobytes"]
+	path = themes/kylobytes
+	url = git@gitlab.com:kdelante14/kylobytes.git

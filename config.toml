@@ -1,0 +1,9 @@
+baseURL = "https://kylobytes.tech/"
+languageCode = "en-us"
+title = "kylobytes"
+theme = "kylobytes"
+
+[params]
+    author = "Kent Delante"	
+    description = "My journey towards becoming a developer"
+    sm_link = "@kdelante14"

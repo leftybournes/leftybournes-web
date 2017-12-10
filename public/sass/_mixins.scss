@@ -1,0 +1,6 @@
+@mixin mtrl-shadow($x-offset: 0px, $opacity: 0.12)
+{
+    box-shadow: $x-offset 2px 5px rgba(0, 0, 0, $opacity);
+    -moz-box-shadow: $x-offset 2px 5px rgba(0, 0, 0, $opacity);
+    -webkit-box-shadow: $x-offset 2px 5px rgba(0, 0, 0, $opacity);
+}

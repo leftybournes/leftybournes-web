@@ -1,0 +1,64 @@
+
+
+#about
+{
+    display: absolute;
+    background-color: $primary-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 10px 0;
+
+    color: $about-text;
+
+    a
+    {
+	text-decoration: none;
+	color: $about-text;
+    }
+    
+    .blog-link
+    {
+	display: block;
+	text-align: right;
+	color: $about-text;
+	font-size: 1.5rem;
+    }
+
+    .img-profile
+    {
+	align-self: center;
+    }
+
+    .author
+    {
+	font-weight: $thin; 
+	font-size: 4rem;
+	margin: 0 auto;
+	
+	em
+	{
+	    font-style: normal;
+	}
+    }
+    
+    .title
+    {
+	font-size: 2rem;
+	margin: 10px 0;
+    }
+
+    .personal-lnks
+    {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+    }
+
+    .personal-lnk
+    {
+	margin: 10px 20px 20px 20px;
+    }
+}
+

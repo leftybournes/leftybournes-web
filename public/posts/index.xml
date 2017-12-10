@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on kylobytes</title>
+    <link>http://localhost:3000/posts/</link>
+    <description>Recent content in Posts on kylobytes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Dec 2017 09:20:06 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:3000/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ipsum</title>
+      <link>http://localhost:3000/posts/ipsum/</link>
+      <pubDate>Sun, 10 Dec 2017 09:20:06 +0800</pubDate>
+      
+      <guid>http://localhost:3000/posts/ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
+Praesent augue.
+Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.</description>
+    </item>
+    
+    <item>
+      <title>Lorem</title>
+      <link>http://localhost:3000/posts/lorem/</link>
+      <pubDate>Sun, 10 Dec 2017 09:20:01 +0800</pubDate>
+      
+      <guid>http://localhost:3000/posts/lorem/</guid>
+      <description>Aliquam erat volutpat. Nunc eleifend leo vitae magna. In id erat non orci commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui dignissim bibendum. Vivamus id enim. Phasellus neque orci, porta a, aliquet quis, semper a, massa. Phasellus purus. Pellentesque tristique imperdiet tortor. Nam euismod tellus id erat.</description>
+    </item>
+    
+    <item>
+      <title>Lipsum</title>
+      <link>http://localhost:3000/posts/lipsum/</link>
+      <pubDate>Sun, 10 Dec 2017 09:19:49 +0800</pubDate>
+      
+      <guid>http://localhost:3000/posts/lipsum/</guid>
+      <description>Nullam eu ante vel est convallis dignissim. Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio. Nunc porta vulputate tellus. Nunc rutrum turpis sed pede. Sed bibendum. Aliquam posuere. Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio. Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna. Curabitur vulputate vestibulum lorem.</description>
+    </item>
+    
+    <item>
+      <title>Second</title>
+      <link>http://localhost:3000/posts/second/</link>
+      <pubDate>Sun, 10 Dec 2017 07:19:53 +0800</pubDate>
+      
+      <guid>http://localhost:3000/posts/second/</guid>
+      <description>Nullam eu ante vel est convallis dignissim. Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Aliquam erat volutpat. Nunc eleifend leo vitae magna. In id erat non orci commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui dignissim bibendum.</description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>http://localhost:3000/posts/first/</link>
+      <pubDate>Sat, 09 Dec 2017 14:28:29 +0800</pubDate>
+      
+      <guid>http://localhost:3000/posts/first/</guid>
+      <description>Nullam eu ante vel est convallis dignissim. Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio. Nunc porta vulputate tellus. Nunc rutrum turpis sed pede. Sed bibendum. Aliquam posuere. Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio. Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna. Curabitur vulputate vestibulum lorem.</description>
+    </item>
+    
+  </channel>
+</rss>
