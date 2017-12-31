@@ -6,4 +6,8 @@ theme = "kylobytes"
 [params]
     author = "Kent Delante"	
     description = "My journey towards becoming a developer"
-    sm_link = "@kdelante14"
+    gitlab_link = "https://gitlab.com/kdelante14/"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
