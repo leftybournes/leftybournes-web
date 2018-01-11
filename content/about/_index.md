@@ -12,14 +12,14 @@ journey towards becoming a hacker.
 
 ## Why 'Kylobytes'?
 
-![kylo image](/img/kylo.png)
+![kylo image](/img/about/kylo.jpg)
 
 The name 'Kylobytes' comes from my dog's name, Kylo, and the common term 'bytes' in
 computer science. It's also a wordplay on kilobytes.
 
 ## The person behind kylobytes
 
-![author image](/img/author.png)
+![author image](/img/about/author.jpg)
 
 Open source advocate and freelance web developer. You can view my portfolio at
 [kentdelante.info](https://www.kentdelante.info/)
