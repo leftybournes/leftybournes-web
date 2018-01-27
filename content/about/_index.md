@@ -4,20 +4,20 @@ date: 2017-12-16T08:48:31+08:00
 draft: false
 ---
 
-# About
+## About
 
 Linux, open source and programming are topics I care much about. Kylobytes is my way
 of sharing my thoughts and opinions on these technologies. This is also a blog on my
 journey towards becoming a hacker.
 
-## Why 'Kylobytes'?
+### Why 'Kylobytes'?
 
 ![kylo image](/img/about/kylo.jpg)
 
 The name 'Kylobytes' comes from my dog's name, Kylo, and the common term 'bytes' in
 computer science. It's also a wordplay on kilobytes.
 
-## The person behind kylobytes
+### The person behind kylobytes
 
 ![author image](/img/about/author.jpg)
 
