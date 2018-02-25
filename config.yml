@@ -4,10 +4,10 @@ title: "kylobytes"
 theme: "kylobytes"
 
 params:
-    - author: "Kent Delante"	
-    - description: "My journey towards becoming a developer"
-    - gitlab_link: "https://gitlab.com/kdelante14/"
+  author: "Kent Delante"    
+  description: "My journey towards becoming a developer"
+  gitlab_link: "https://gitlab.com/kdelante14/"
 
 taxonomies:
-    - tag: "tags"
-    - category: "categories"
+  tag: "tags"
+  category: "categories"
