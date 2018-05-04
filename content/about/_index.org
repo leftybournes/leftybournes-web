@@ -1,0 +1,23 @@
+---
+title: "About"
+date: 2018-05-01T11:50:48+08:00
+draft: false
+---
+
+
+
+** About
+
+[[file:/img/about/author.jpg][Photo of author]]
+
+I am a Linux and Open Source enthusiast and a self-taught developer. Kylobytes
+is my way of sharing my thoughts and opinions on these subjects. This is also
+a platform for me to share showcase [[https://reactjs.org][React]] projects and perhaps
+[[https://vuejs.org][Vue]]. React projects can be found [[https://react.kylobytes.tech][here]].
+
+*** Why 'Kylobytes'?
+
+[[file:/img/about/kylo.jpg][Photo of Kylo]]
+
+The name "Kylobytes" is a result of wordplay on "kilobytes". "Kylo" is my dog's
+name.
