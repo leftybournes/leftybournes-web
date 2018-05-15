@@ -1,0 +1,32 @@
+---
+title: "Wikipedia Viewer"
+date: 2018-05-15T09:15:04+08:00
+draft: false
+description: "Search Wikipedia articles"
+---
+
+<div class="apps__wikipediaViewer">
+    <div class="apps__wikipediaViewer__searchWrapper">
+        <input type="search"
+               name="wikipediaSearch"
+               class="apps__wikipediaViewer__searchWrapper__searchInput"
+               placeholder="Search Article"
+               autocomplete="off"
+               autofocus />
+
+        <button class="apps__wikipediaViewer__searchWrapper__searchButton"
+                type="button">Search</button>
+        <a class="apps__wikipediaViewer__searchWrapper__randomButton"
+           href="https://en.wikipedia.org/wiki/Special:Random"
+           target="_blank">
+            Random Article
+        </a>
+    </div>
+
+    <div class="apps__wikipediaViewer__resultsWrapper">
+    </div>
+</div>
+
+
+<script text="text/javascript"
+        src="../../../../scripts/wikipediaViewer.js"></script> 

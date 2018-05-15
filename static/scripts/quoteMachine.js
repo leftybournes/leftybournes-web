@@ -6,7 +6,7 @@ window.onload = function() {
         method: "GET",
         mode: "cors",
         headers: new Headers({
-            'Content-Type': "text/plain"
+            "Content-Type": "text/plain"
         })
     });
 
