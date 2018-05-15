@@ -20,6 +20,14 @@ window.onload = function() {
     });
     
     function getSearchResults() {
+
+        resultsWrapper.innerHTML = "";
+
+        var spinner = document.createElement("i");
+        spinner.className = "apps__wikipediaViewer__resultsWrapper__spinner fas fa-circle-notch fa-spin fa-10x";
+
+        resultsWrapper.appendChild(spinner);
+        
         var query = searchInput.value.replace(/ /g,"%20");
         
         var apiRequest = new Request(`${apiUrl}?action=query&list=search&srsearch=${query}&srlimit=10&format=json&origin=*`, {
@@ -35,6 +43,8 @@ window.onload = function() {
                 return response.json();
             })
             .then(function (response) {
+                resultsWrapper.removeChild(spinner);
+                
                 response.query.search.forEach(function(result) {
                     var resultContainer = document.createElement("div");
                     var title = document.createElement("h3");
