@@ -9,7 +9,7 @@ whole year last year. Now's the time to take action! I started working on this
 blog last November and thought it would be perfect to launch at the start of
 2018.
 
-### What's this blog about?
+## What's this blog about?
 
 I aim to share my thoughts on technology, specifically on Linux, open source,
 free software and programming. I shall also log what I learn throughout my
@@ -20,7 +20,7 @@ If you're wondering who I am, you can find out more on the [about page](/about/)
 [personal portfolio](https://www.kentdelante.info/).
 
 
-### How regular are articles going to be posted?
+## How regular are articles going to be posted?
 
 I plan to post articles on a biweekly basis.
 
