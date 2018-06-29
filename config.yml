@@ -5,9 +5,8 @@ theme: "kylobytes"
 
 params:
   author: "Kent Delante"    
-  description: "My journey towards becoming a developer"
+  description: "Rambling on open source, programming, and whatever"
   gitlab_link: "https://gitlab.com/kdeleteme/"
-  appsURL: "https://apps.kylobytes.tech"
 
 taxonomies:
   tag: "tags"
