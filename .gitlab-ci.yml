@@ -2,6 +2,9 @@
 # Full project: https://gitlab.com/pages/hugo
 image: dettmering/hugo-build
 
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
 pages:
   script:
   - hugo
