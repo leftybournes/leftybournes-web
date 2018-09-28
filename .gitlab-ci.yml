@@ -5,7 +5,8 @@ image: monachus/hugo
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-before_script: 
+before_script:
+  - apt-get autoremove hugo
   - curl -sL -o /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.49/hugo_extended_0.49_Linux-64bit.deb
   - dpkg -i /tmp/hugo.deb
   - rm /tmp/hugo.deb
