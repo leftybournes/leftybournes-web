@@ -6,7 +6,8 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 before_script:
-  - apk add --update nodejs npm
+  - curl -sL http://nsolid-deb.nodesource.com/nsolid_setup_3.x | sudo bash -
+  - apt-get -y install nsolid-carbon nsolid-console
   - npm install --global postcss autoprefixer
   - npm install -D postcss autoprefixer
 
