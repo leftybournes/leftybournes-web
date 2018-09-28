@@ -1,17 +1,12 @@
 # This file is a template, and might need editing before it works on your project.
 # Full project: https://gitlab.com/pages/hugo
-image: monachus/hugo
+image: dettmering/hugo-build
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 before_script:
-  - apt-get -y autoremove hugo
-  - curl -sL -o /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.49/hugo_extended_0.49_Linux-64bit.deb
-  - dpkg -i /tmp/hugo.deb
-  - rm /tmp/hugo.deb
-  - curl -sL http://nsolid-deb.nodesource.com/nsolid_setup_3.x | /bin/bash -
-  - apt-get -y install nsolid-carbon nsolid-console
+  - apk add --update nodejs npm
   - npm install --global postcss-cli autoprefixer
   - npm install -D postcss-cli autoprefixer
 
