@@ -5,6 +5,10 @@ image: dettmering/hugo-build
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
+before_script:
+  - apk add --update nodejs
+  - npm install -D postcss autoprefixer
+
 pages:
   script:
   - hugo
