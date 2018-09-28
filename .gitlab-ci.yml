@@ -6,7 +6,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 before_script:
-  - apk add --update nodejs
+  - apk add --update nodejs npm
   - npm install -D postcss autoprefixer
 
 pages:
