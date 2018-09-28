@@ -5,16 +5,15 @@ image: monachus/hugo
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-before_script: |
-  curl -sL -o /tmp/hugo.deb \
-  https://github.com/gohugoio/hugo/releases/download/v0.49/hugo_extended_0.49_Linux-64bit.deb && \
-  dpkg -i /tmp/hugo.deb && \
-  rm /tmp/hugo.deb && \
-  mkdir /usr/share/blog && \
-  curl -sL http://nsolid-deb.nodesource.com/nsolid_setup_3.x | /bin/bash - && \
-  apt-get -y install nsolid-carbon nsolid-console && \
-  npm install --global postcss-cli autoprefixer && \
-  npm install -D postcss-cli autoprefixer && \
+before_script: 
+  - curl -sL -o /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.49/hugo_extended_0.49_Linux-64bit.deb
+  - dpkg -i /tmp/hugo.deb
+  - rm /tmp/hugo.deb
+  - mkdir /usr/share/blog
+  - curl -sL http://nsolid-deb.nodesource.com/nsolid_setup_3.x | /bin/bash -
+  - apt-get -y install nsolid-carbon nsolid-console
+  - npm install --global postcss-cli autoprefixer
+  - npm install -D postcss-cli autoprefixer
 
 pages:
   script:
