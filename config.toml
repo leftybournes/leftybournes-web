@@ -1,0 +1,13 @@
+baseURL="https://kylobytes.gitlab.io"
+languageCode="en-us"
+title="kylobytes"
+theme="kylobytes"
+
+[params]
+  author="Kent Delante"    
+  description="Rambling on open source, programming, and whatever"
+  gitlab_link="https://gitlab.com/kdeleteme/"
+
+[taxonomies]
+  tag="tags"
+  category="categories"
