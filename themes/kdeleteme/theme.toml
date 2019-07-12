@@ -1,0 +1,12 @@
+name = "kdeleteme"
+license = "GPL-3.0"
+licenselink = "https://www.gnu.org/licenses/gpl-3.0.txt"
+description = "A theme made for kdeleteme's blog"
+homepage = "https://kdeleteme.neocities.org"
+tags = ["personal", "blog"]
+features = ["responsive"]
+min_version = 0.55
+
+[author]
+  name = "kdeleteme"
+  homepage = "https://kdeleteme.gitlab.io"

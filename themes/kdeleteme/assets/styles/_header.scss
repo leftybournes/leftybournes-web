@@ -1,0 +1,67 @@
+.header {
+    align-items: baseline;
+    background-color: $primary-color;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+    padding: 8px 36px 0 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100px;
+
+    &__brand {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-decoration: none;
+
+        &:visited {
+            color: $primary-text-color;
+        }
+
+        &__logo {
+            height: 84px;
+            width: 84px;
+        }
+    }
+
+    &__links {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        &__link {
+            color: $primary-text-color;
+            font-size: 1.4rem;
+            margin: 0 8px;
+            padding-bottom: 2px;
+            
+            &:hover, &--active {
+                color: $accent-color;
+                border-bottom: 2px solid $accent-color;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .header {
+        align-items: center;
+        flex-direction: column;
+        
+        &__links {
+            margin-top: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__links {
+        flex-direction: column;
+
+        &__link {
+            margin-top: 8px;
+        }
+    }
+}

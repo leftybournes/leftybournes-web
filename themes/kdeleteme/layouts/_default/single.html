@@ -1,0 +1,24 @@
+{{ partial "head" . }}
+{{ partial "header" . }}
+
+<main class="single">
+    <div class="container">
+	    <div class="single__article">
+	        <h1 class="{{ if eq .File.Dir "articles/" }}
+                single__article__title
+                {{ else }}
+                single__app__title
+                {{ end }}">{{ .Title }}</h1>
+            {{ if eq .File.Dir "articles/" }}
+	        <p class="single__article__publishDate">published on
+		        <time datetime="{{ .Date.Local.Format "2006-2-01T09:19:49" | safeHTML }}">
+		            {{ .Date.Local.Format "Jan 2, 2006" }}
+		        </time>
+	        </p>
+            {{ end }}
+	        <p>{{ .Content }}</p>
+	    </div>
+    </div>
+</main>
+
+{{ partial "footer" . }}

@@ -1,8 +1,8 @@
-baseURL="https://kylobytes.neocities.org"
+baseURL="https://kdeleteme.neocities.org"
 languageCode="en-us"
-title="kylobytes"
-theme="kylobytes"
-copyright="- Copyright &#169; 2018-2019 - Kylobytes"
+title="kdeleteme's blog"
+theme="kdeleteme"
+copyright="- Copyright &#169; 2018-2019 - kdeleteme"
 
 [params]
   author="kdeleteme"

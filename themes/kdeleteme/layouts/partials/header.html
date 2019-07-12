@@ -1,0 +1,31 @@
+<header class="header">
+
+    <a class="header__brand" href="{{ .Site.BaseURL }}">
+	    <img class="header__brand__logo"
+	         src="{{ "/img/" | relURL }}logo.png"
+	         width="84"
+	         height="84"
+	         alt="logo" />
+    </a>
+
+    <nav role="navigation" class="header__links">
+	    <a class="header__links__link
+		          {{ if .IsHome }}
+		          header__links__link--active
+		          {{ end }}"
+	       href="{{ .Site.BaseURL }}">home</a>
+	    <a class="header__links__link
+		          {{ if eq .RelPermalink "/archives/" }}
+	       header__links__link--active
+	       {{ end }}"
+	       href="/archives">archives</a>
+		<a class="header__links__link
+		          {{ if eq .RelPermalink "/about/"}}
+	       header__links__link--active
+	       {{ end }}"
+	       href="/about">about</a>
+
+    </nav>
+    
+</header>
+
