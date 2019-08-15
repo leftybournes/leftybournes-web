@@ -13,11 +13,7 @@
 
         <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
         
-        {{ if .IsHome }}
-        <title>kylobytes | Home</title>
-        {{ else }}
-        <title>kylobytes | {{ .Title }}</title>
-        {{ end }}
+        <title>{{ .Title }}</title>
 
         {{ $sass := resources.Get "styles/main.scss" }}
         {{ $opts := (dict "outputStyle" "compressed") }}
