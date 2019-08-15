@@ -2,11 +2,11 @@ baseURL="https://kdeleteme.neocities.org"
 languageCode="en-us"
 title="kdeleteme's blog"
 theme="kdeleteme"
-copyright="- Copyright &#169; 2018-2019 - kdeleteme"
+copyright="- Copyright &#169; 2018-2019"
 
 [params]
   author="kdeleteme"
-  description="Rambling on open source, programming, and whatever"
+  description="Rambling on free software, programming, and whatnot"
   gitlab_link="https://gitlab.com/kdeleteme/"
 
 [taxonomies]
