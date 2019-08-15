@@ -2,21 +2,23 @@
 {{ partial "header" . }}
 
 <main class="home">
-
-  <nav class="container list__articleList">
-    {{ range first 10 (where .Pages "Section" "articles") }}
-    <section class="list__articleList__article">
-      <a href="{{ .RelPermalink }}"
-         class="list__articleList__article__link">
-        <h2 class="list__articleList__article__title">{{ .Title }}</h2>
-        <p class="list__articleList__article__publishDate">
-	      {{ .Date.Format "Jan 2, 2006" }}
-        </p>
-      </a>
-    </section>
-    {{ end }}
-  </nav>
-  
+    <nav class="container list__articleList">
+        {{ with .Site.GetPage "/articles" }}
+        {{ range first 10 .Pages }}
+        <section class="list__articleList__article">
+            <a href="{{ .RelPermalink }}"
+               class="list__articleList__article__link">
+                <h2 class="list__articleList__article__title">
+                    {{ .Title }}
+                </h2>
+                <p class="list__articleList__article__publishDate">
+	                {{ .Date.Format "Jan 2, 2006" }}
+                </p>
+            </a>
+        </section>
+        {{ end }}
+        {{ end }}
+    </nav>
 </main>
 
 {{ partial "footer" . }}
