@@ -32,13 +32,14 @@
         &__link {
             color: $primary-text-color;
             font-size: 1.4rem;
-            margin: 0 8px;
-            padding-bottom: 2px;
+            margin: 0 6px;
+            padding: 8px;
             
             &:hover, &--active {
+                border: 2px solid $accent-color;
+                border-radius: 8px;
                 color: $accent-color;
-                border-bottom: 2px solid $accent-color;
-                padding-bottom: 0;
+                padding: 6px;
             }
         }
     }
@@ -48,7 +49,7 @@
     .header {
         align-items: center;
         flex-direction: column;
-        
+
         &__links {
             margin-top: 36px;
         }
