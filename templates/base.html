@@ -5,8 +5,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="{{ get_url(path="fonts/inter/web/inter.css") }}">
-		<link rel="stylesheet" type="text/css" href="{{ get_url(path="index.css") }}">
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="{{ get_url(path="fonts/inter/web/inter.css") }}">
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="{{ get_url(path="index.css") }}">
 		<title>
 			{% block title %}
 				Leftybournes Blog
@@ -14,7 +18,38 @@
 		</title>
 	</head>
 	<body>
-		<header></header>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__branding">
+					<h1 class="header__brand">
+						<a href="/" class="header__brandlink">
+							Leftybournes Blog
+						</a>
+					</h1>
+					<p class="header__description">
+						<em>
+							Tech, linux, free software and programming
+						</em>
+					</p>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__navlist">
+						<li class="header__navelement">
+							<a href="/"
+							   class="header__navlink">
+								Home
+							</a>
+						</li>
+						<li class="header__navelement">
+							<a href="/about"
+							   class="header__navlink">
+								About
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 		{% block content %}{% endblock %}
 	</body>
 </html>

@@ -1,7 +1,19 @@
+@use "header";
+@use "variables";
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
 
 html {
 	font-family: "Inter", "Helvetica", sans-serif;
+	color: variables.$text-color;
+}
+
+body {
+	background-color: variables.$background-color;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: variables.$background-color-dark;
+	}
 }
