@@ -3,9 +3,6 @@
 
 .header {
 	&__container {
-		width: 90%;
-		max-width: variables.$max-container-width;
-		margin: 0 auto;
 		display: flex;
 		flex-flow: column;
 		align-items: center;
@@ -46,19 +43,28 @@
 		text-decoration: none;
 		font-size: 1.2rem;
 		font-weight: 500;
-		color: color.scale(variables.$background-color-dark, $lightness: 10%);
+		color: color.scale(variables.$background-color-dark,$lightness: 10%);
 
 		&:hover {
 			text-decoration: underline;
 		}
 	}
-}
 
-@media screen and (min-width: 640px) {
-	.header {
-		&__container {
-			width: 80%;
-		}
+	&__introduction {
+		background-color: color.scale(
+			variables.$background-color-dark,
+			$lightness: 40%,
+			$alpha: -80%
+		);
+		border-radius: 1.2rem;
+		color: color.scale(
+			variables.$text-color,
+			$lightness: 20%,
+			$saturation: -80%
+		);
+		padding: 0.4rem 1rem;
+		width: 60%;
+		margin-top: 3rem;
 	}
 }
 
@@ -69,10 +75,25 @@
 		}
 
 		&__navlink {
-			color: color.scale(variables.$background-color-dark, $lightness: 80%);
+			color: color.scale(
+				variables.$background-color-dark,
+				$lightness: 80%
+			);
 		}
 
 		&__description {
+			color: color.scale(
+				variables.$text-color-dark,
+				$lightness: -20%
+			);
+		}
+
+		&__introduction {
+			background-color: color.scale(
+				variables.$background-color-dark,
+				$lightness: 90%,
+				$alpha: -80%
+			);
 			color: color.scale(variables.$text-color-dark, $lightness: -20%);
 		}
 	}
