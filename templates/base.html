@@ -20,7 +20,7 @@
 	<body>
 		<header class="header">
 			<div class="lefty__container header__container">
-				<div class="header__branding">
+				<section class="header__branding">
 					<h1 class="header__brand">
 						<a href="/" class="header__brandlink">
 							Leftybournes Blog
@@ -31,7 +31,29 @@
 							Tech, gnu/linux, free/libre software and programming
 						</em>
 					</p>
-				</div>
+				</section>
+				<section class="header__links">
+					<ul class="header__navlist">
+						<li class="header__navelement">
+							<a href="{{ config.extra.links.portfolio }}"
+							   class="header__navlink">
+								Portfolio
+							</a>
+						</li>
+						<li class="header_navelement">
+							<a href="{{ config.extra.links.mastodon }}"
+							   class="header__navlink">
+								Mastodon
+							</a>
+						</li>
+						<li class="header_navelement">
+							<a href="{{ config.extra.links.github }}"
+							   class="header__navlink">
+								Github
+							</a>
+						</li>
+					</ul>
+				</section>
 				<!-- <nav class="header__nav">
 					<ul class="header__navlist">
 						<li class="header__navelement">
@@ -48,7 +70,7 @@
 						</li>
 					</ul>
 				</nav> -->
-				<div class="header__introduction">
+				<section class="header__introduction">
 					<p>Hello there!</p>
 					<p>
 						I'm Leftybournes, a software developer from the
@@ -56,7 +78,7 @@
 						about building free software on the web, mobile, and
 						the desktop.
 					</p>
-				</div>
+				</section>
 			</div>
 		</header>
 		{% block content %}{% endblock %}

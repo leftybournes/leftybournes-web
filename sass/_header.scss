@@ -38,10 +38,13 @@
 		padding: 0px;
 	}
 
+	&__links {
+		margin: 1rem auto;
+	}
+
 	&__navlink {
 		color: variables.$text-color;
 		text-decoration: none;
-		font-size: 1.2rem;
 		font-weight: 500;
 		color: color.scale(variables.$background-color-dark,$lightness: 10%);
 
@@ -64,7 +67,6 @@
 		);
 		padding: 0.4rem 1rem;
 		width: 60%;
-		margin-top: 3rem;
 	}
 }
 
