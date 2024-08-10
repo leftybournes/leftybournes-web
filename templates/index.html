@@ -1,4 +1,29 @@
 {% extends "base.html" %}
 
 {% block content %}
+	<main class="lefty__main lefty__container">
+		<section class="lefty__articles">
+			{% for page in section.pages %}
+				<article class="lefty__article">
+					<h2 class="article__title">
+						<a href="{{ page.permalink }}"
+						   class="article__title article__link">
+							{{ page.title }}
+						</a>
+					</h2>
+					<p class="article__date">
+						<small>
+							{{ page.date | date(format="%A, %B %d, %Y") }} (UTC+8/PHT)
+						</small>
+					</p>
+					<p class="article__summary">
+						{{ page.summary }}
+						<a class="article__link" href="{{ page.permalink }}">
+							Read More
+						</a>
+					</p>
+				</article>
+			{% endfor %}
+		</section>
+	</main>
 {% endblock %}

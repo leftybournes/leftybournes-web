@@ -1,0 +1,72 @@
+@use "sass:color";
+
+@use "variables";
+
+.lefty {
+	&__main {
+		padding-top: 3rem;
+	}
+
+	&__articles {
+		display: flex;
+		flex-flow: column;
+		row-gap: 2rem;
+	}
+
+	&__article {
+		.article {
+			&__title, &__link {
+				text-decoration: none;
+			}
+
+			&__title, &__date, &__summary {
+				color: variables.$text-color;
+			}
+
+			&__title {
+				margin-bottom: 0px;
+			}
+
+			&__summary {
+				text-align: justify;
+			}
+
+			&__date {
+				margin: 0px;
+			}
+
+			&__link {
+				text-decoration: none;
+			}
+
+			&__link:not(&__title) {
+				color: variables.$background-color-dark;
+				margin-left: 0.5rem;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	.lefty {
+		&__article {
+			.article {
+				&__title, &__date, &__summary {
+					color: color.scale(
+						variables.$background-color-dark,
+						$lightness: 80%
+					);
+				}
+
+				&__link {
+					color: variables.$text-color-dark;
+				}
+			}
+		}
+	}
+}

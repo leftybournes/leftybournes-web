@@ -46,7 +46,7 @@
 		color: variables.$text-color;
 		text-decoration: none;
 		font-weight: 500;
-		color: color.scale(variables.$background-color-dark,$lightness: 10%);
+		color: color.scale(variables.$background-color-dark, $lightness: 10%);
 
 		&:hover {
 			text-decoration: underline;
