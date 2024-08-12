@@ -29,6 +29,11 @@
 
 			&__summary {
 				text-align: justify;
+				margin-top: 1rem;
+
+				& p {
+					display: inline;
+				}
 			}
 
 			&__date {
@@ -64,6 +69,10 @@
 				}
 
 				&__link {
+					color: variables.$text-color-dark;
+				}
+
+				&__link:not(&__title) {
 					color: variables.$text-color-dark;
 				}
 			}

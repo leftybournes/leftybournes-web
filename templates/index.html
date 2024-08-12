@@ -16,12 +16,12 @@
 							{{ page.date | date(format="%A, %B %d, %Y") }} (UTC+8/PHT)
 						</small>
 					</p>
-					<p class="article__summary">
-						{{ page.summary }}
+					<section class="article__summary">
+						{{ page.summary | safe }}
 						<a class="article__link" href="{{ page.permalink }}">
 							Read More
 						</a>
-					</p>
+					</section>
 				</article>
 			{% endfor %}
 		</section>
