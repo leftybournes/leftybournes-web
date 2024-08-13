@@ -1,0 +1,46 @@
+@use "variables";
+@use "sass:color";
+
+.lefty__page {
+	padding-top: 4rem;
+
+	.page {
+		&__title, &__content {
+			color: variables.$text-color;
+		}
+
+		&__title, &__date {
+			text-align: center;
+		}
+
+		&__date {
+			color: color.scale(variables.$background-color, $lightness: -70%);
+		}
+
+		&__title {
+			margin-bottom: 0px;
+		}
+
+		&__date {
+			margin-top: 0px;
+		}
+
+		&__content {
+			margin-top: 3rem;
+		}
+	}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	.lefty__page {
+		.page {
+			&__title, &__date, &__content {
+				color: variables.$text-color-dark;
+			}
+
+			&__date {
+				color: color.scale(variables.$text-color-dark, $lightness: -30%);
+			}
+		}
+	}
+}
