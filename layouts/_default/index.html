@@ -1,0 +1,31 @@
+{{ define "content" }}
+  <main class="lefty__main lefty__container">
+	<section class="lefty__articles">
+	  {{ range site.RegularPages }}
+	  <article class="lefty__article">
+		<h2 class="article__title">
+		  <a href="{{ .RelPermalink }}"
+			 class="article__title article__link">
+			{{ .LinkTitle }}
+		  </a>
+		</h2>
+		<p class="article__date">
+          {{ with .Date }}
+            {{ $dateMachine := . | time.Format "2000-01-01T00:00:00-00:00" }}
+            {{ $dateHuman := . | time.Format ":date_long" }}
+		    <time datetime="{{ $dateMachine }}">
+              {{ $dateHuman }}
+		    </time>
+          {{ end }}
+		</p>
+		<section class="article__summary">
+		  {{ .Summary }}
+		  <a class="article__link article__more" href="{{ .RelPermalink }}">
+			Read More
+		  </a>
+		</section>
+	  </article>
+	  {{ end }}
+	</section>
+  </main>
+{{ end }}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+    {{ $styleOpts := dict "transpiler" "dartsass" }}
+    {{ $style := resources.Get "sass/main.scss" | toCSS $styleOpts | minify | fingerprint }}
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="{{ "fonts/inter/web/inter.css" | relURL }}">
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="{{ $style.RelPermalink }}">
+	<title>
+	  {{ block "title" . }}
+	  Leftybournes Blog
+	  {{ end }}
+	</title>
+  </head>
+  <body>
+	<header class="header">
+	  <div class="lefty__container header__container">
+		<section class="header__branding">
+		  <h1 class="header__brand">
+			<a href="/" class="header__brandlink">
+			  Leftybournes Blog
+			</a>
+		  </h1>
+		  <p class="header__description">
+			<em>
+			  Tech, gnu/linux, free/libre software and programming
+			</em>
+		  </p>
+		</section>
+		<section class="header__links">
+		  <ul class="header__navlist">
+			<li class="header__navelement">
+			  <a href="{{ .Site.Params.links.portfolio }}"
+				 class="header__navlink">
+				Portfolio
+			  </a>
+			</li>
+			<li class="header_navelement">
+			  <a href="{{ .Site.Params.links.mastodon }}"
+				 class="header__navlink">
+				Mastodon
+			  </a>
+			</li>
+			<li class="header_navelement">
+			  <a href="{{ .Site.Params.links.github }}"
+				 class="header__navlink">
+				Github
+			  </a>
+			</li>
+		  </ul>
+		</section>
+		<!-- <nav class="header__nav">
+			 <ul class="header__navlist">
+			 <li class="header__navelement">
+			 <a href="/"
+			 class="header__navlink">
+			 Home
+			 </a>
+			 </li>
+			 <li class="header__navelement">
+			 <a href="/about"
+			 class="header__navlink">
+			 About
+			 </a>
+			 </li>
+			 </ul>
+			 </nav> -->
+		<section class="header__introduction">
+		  <p>Hello there!</p>
+		  <p>
+			I'm Leftybournes, a software developer from the
+			Philippines with a passion for technology. I write
+			about building free software on the web, mobile, and
+			the desktop.
+		  </p>
+		</section>
+	  </div>
+	</header>
+	{{ block "content" . }}{{ end }}
+  </body>
+</html>

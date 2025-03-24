@@ -1,11 +1,14 @@
 @use "sass:color";
-
 @use "variables";
 
 .lefty {
 	&__main {
 		padding-top: 3rem;
 	}
+
+    &__main #headline-1 {
+        display: none;
+    }
 
 	&__articles {
 		display: flex;
@@ -36,17 +39,17 @@
 				}
 			}
 
+            &__more {
+                display: block;
+                margin-top: 12px;
+            }
+
 			&__date {
 				margin: 0px;
 			}
 
-			&__link {
-				text-decoration: none;
-			}
-
 			&__link:not(&__title) {
 				color: variables.$background-color-dark;
-				margin-left: 0.5rem;
 
 				&:hover {
 					text-decoration: underline;

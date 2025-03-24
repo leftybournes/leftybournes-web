@@ -1,0 +1,9 @@
+baseURL = "https://leftybournes.com/"
+languageCode = "en-us"
+title = "Leftybournes Blog"
+enableRobotsTXT = true
+
+[params.links]
+portfolio = "https://kent.delante.me"
+mastodon = "https://mastodon.online/@leftybournes"
+github = "https://github.com/leftybournes"
