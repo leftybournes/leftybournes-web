@@ -1,12 +1,11 @@
-@use "variables";
-@use "sass:color";
+@import "variables";
 
 .lefty__page {
 	padding-top: 4rem;
 
 	.page {
 		&__title, &__content {
-			color: var(--text-color);
+			color: $text-color;
 		}
 
 		&__title, &__date {
@@ -14,7 +13,7 @@
 		}
 
 		&__date {
-			color: color.scale(variables.$background-color, $lightness: -70%);
+			color: darken($background-color, 70);
 		}
 
 		&__title {
@@ -35,11 +34,11 @@
 	.lefty__page {
 		.page {
 			&__title, &__date, &__content {
-				color: variables.$text-color-dark;
+				color: $text-color-dark;
 			}
 
 			&__date {
-				color: color.scale(variables.$text-color-dark, $lightness: -30%);
+				color: darken($text-color-dark, 30);
 			}
 		}
 	}

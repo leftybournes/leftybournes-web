@@ -5,8 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-    {{ $styleOpts := dict "transpiler" "dartsass" }}
-    {{ $style := resources.Get "sass/main.scss" | toCSS $styleOpts | minify | fingerprint }}
+    {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
 	<link rel="stylesheet"
 		  type="text/css"
 		  href="{{ "fonts/inter/web/inter.css" | relURL }}">

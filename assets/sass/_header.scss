@@ -1,5 +1,4 @@
-@use "sass:color";
-@use "variables";
+@import "variables";
 
 .header {
 	&__container {
@@ -20,11 +19,11 @@
 		font-size: 1.6rem;
 		font-weight: 700;
 		text-decoration: none;
-		color: variables.$text-color;
+		color: $text-color;
 	}
 
 	&__description {
-		color: color.scale(variables.$text-color, $lightness: -20%);
+		color: darken($text-color, 20);
 		font-weight: 300;
 		margin: 0px;
 	}
@@ -43,10 +42,10 @@
 	}
 
 	&__navlink {
-		color: variables.$text-color;
+		color: $text-color;
 		text-decoration: none;
 		font-weight: 500;
-		color: color.scale(variables.$background-color-dark, $lightness: 10%);
+		color: lighten($background-color-dark, 10);
 
 		&:hover {
 			text-decoration: underline;
@@ -54,16 +53,14 @@
 	}
 
 	&__introduction {
-		background-color: color.scale(
-			variables.$background-color-dark,
-			$lightness: 40%,
-			$alpha: -80%
+		background-color: lighten(
+			$background-color-dark,
+			40
 		);
 		border-radius: 1.2rem;
-		color: color.scale(
-			variables.$text-color,
-			$lightness: 20%,
-			$saturation: -80%
+		color: lighten(
+			$text-color,
+			20
 		);
 		padding: 0.4rem 1rem;
 		width: 60%;
@@ -73,30 +70,29 @@
 @media screen and (prefers-color-scheme: dark) {
 	.header {
 		&__brandlink {
-			color: variables.$text-color-dark;
+			color: $text-color-dark;
 		}
 
 		&__navlink {
-			color: color.scale(
-				variables.$background-color-dark,
-				$lightness: 80%
+			color: lighten(
+				$background-color-dark,
+				80
 			);
 		}
 
 		&__description {
-			color: color.scale(
-				variables.$text-color-dark,
-				$lightness: -20%
+			color: darken(
+				$text-color-dark,
+				20
 			);
 		}
 
 		&__introduction {
-			background-color: color.scale(
-				variables.$background-color-dark,
-				$lightness: 90%,
-				$alpha: -80%
+			background-color: lighten(
+				rgba($background-color-dark, 0.8),
+				10
 			);
-			color: color.scale(variables.$text-color-dark, $lightness: -20%);
+			color: darken($text-color-dark, 20);
 		}
 	}
 }

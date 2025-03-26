@@ -1,5 +1,4 @@
-@use "sass:color";
-@use "variables";
+@import "variables";
 
 .lefty {
 	&__main {
@@ -23,7 +22,7 @@
 			}
 
 			&__title, &__date, &__summary {
-				color: variables.$text-color;
+				color: $text-color;
 			}
 
 			&__title {
@@ -49,7 +48,7 @@
 			}
 
 			&__link:not(&__title) {
-				color: variables.$background-color-dark;
+				color: $background-color-dark;
 
 				&:hover {
 					text-decoration: underline;
@@ -65,18 +64,18 @@
 		&__article {
 			.article {
 				&__title, &__date, &__summary {
-					color: color.scale(
-						variables.$background-color-dark,
-						$lightness: 80%
+					color: lighten(
+						$background-color-dark,
+						80%
 					);
 				}
 
 				&__link {
-					color: variables.$text-color-dark;
+					color: $text-color-dark;
 				}
 
 				&__link:not(&__title) {
-					color: variables.$text-color-dark;
+					color: $text-color-dark;
 				}
 			}
 		}
